@@ -9,10 +9,10 @@ from sklearn.metrics import (
     ConfusionMatrixDisplay, confusion_matrix
 )
 
-data = pd.read_csv('/content/DataPD.txt', sep="\t")
+data = pd.read_csv('DataPD.csv')
 data.head()
 
-desc = pd.read_csv('/content/Description.txt', sep="\t")
+desc = pd.read_csv('Description.txt', sep="\t")
 print(tabulate(desc, headers='keys', tablefmt='plain'))
 
 variable_types = desc['Type'].unique()
